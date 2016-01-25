@@ -1,8 +1,27 @@
 @charset "utf-8";
 @import "normalize";
 
-
+//Variable color overrides
 $brand-primary:         #015B4E;
+
+
+#home {
+  background: url(../images/background.jpg) no-repeat center top fixed;
+  display: table;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  padding-top: 517px;
+}
+
+#transparent {
+  background: transparent;
+}
+
+#white {
+  background: white;
+}
+
 
 @import 'bootstrap';
 
