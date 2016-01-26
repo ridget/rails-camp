@@ -2,7 +2,41 @@
 @import "normalize";
 
 
-$brand-primary:         #015B4E;
+$brand-primary:           #273f03 !default;
+$brand-secondary:         #d8e4f4 !default;
+$body-bg:                 transparent !default;
+$text-color:              $brand-primary !default;
+$font-size-base:          20px !default;
+$font-family-sans-serif:  "Open sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif;
+$headings-font-family:    "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$font-size-h1:            floor(($font-size-base * 5)) !default;
+$font-size-h2:            floor(($font-size-base * 3)) !default;
+
+html, body {
+  height: 100%;
+}
+
+.hero-unit {
+  background: url(../images/background2.jpg) no-repeat center top fixed;
+  height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.header {
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+#tickets {
+  background-color: $brand-secondary;
+  text-align: center;
+}
 
 @import 'bootstrap';
 
