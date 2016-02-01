@@ -13,7 +13,7 @@ $font-family-sans-serif:  "Open sans", "HelveticaNeue-Light", "Helvetica Neue Li
 $headings-font-family:    "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 //headings
 $font-size-h1:            floor(($font-size-base * 5));
-$font-size-h2:            floor(($font-size-base * 3));
+$font-size-h2:            floor(($font-size-base * 2));
 
 //navbar
 $navbar-inverse-color:                      $brand-secondary;
@@ -26,6 +26,10 @@ $navbar-inverse-link-active-color:          $brand-secondary;
 $navbar-inverse-link-active-bg:             darken($brand-primary, 5%);
 $navbar-inverse-brand-hover-color:          $navbar-inverse-link-hover-color;
 
+//panels
+$panel-primary-text:    $brand-secondary;
+
+//customisation
 html, body {
   height: 100%;
 }
@@ -35,6 +39,19 @@ h1 {
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
+h2 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+
 .hero-unit {
   background: url(../images/background2.jpg) no-repeat center top fixed;
   height: 100%;
@@ -42,23 +59,23 @@ h1 {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  margin: 20px 0;
 }
 
 .header {
   color: $brand-secondary;
   position: absolute;
-  bottom: 10px;
+  background: rgba(0, 0, 0, .6);
+  padding: 30px 0;
   width: 100%;
   text-align: center;
+  font-weight: bold;
 }
 
-.navbar {
-  backround: $brand-primary;
-}
 
 @import 'bootstrap';
 
-/*
+/* middleman stuffs
 body {
   background: #ECC561;
   text-align: center;
