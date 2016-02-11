@@ -25,11 +25,13 @@ Must:
 * Ti.to setup and links
 * Sponsor ticket application setup and link
 * Switch out sponsor table placeholder to “TBA”
-* Footer
 * Format panels to be same height
+* Fix hero responsiveness (terrible for mobiles currently)
+* Page jumps
+* Stick ticket buttons to bottom of panels
 
 Maybe:
-* Page jumps
 * Custom URL
-* Formating sponsor images
+* Format sponsor images
 * Carousel of Adelaide Hills images
+* Format speaker table
