@@ -17,21 +17,22 @@ See [Bootstrap Sass](https://github.com/twbs/bootstrap-sass) for Bootstrap info.
 
 ## Building
 
-"middleman build" command will build locally. Currently Middleman is breaking file paths, with trailing /'s, so what should be "stylesheets/site.css" is "/stylesheets/site.css". I have yet to fix this in any way other than manually correcting! It's a pain, will be looking further into it.
+"middleman build" command will build locally and should work. When using [MGD](https://github.com/hovancik/middleman-github-deploy) to push site to GitHub Pages file paths are breaking. So what should be "stylesheets/site.css" is "/stylesheets/site.css". Yet to fix this in any way other than manually correcting! It's a pain, will be looking further into it.
 
 ## To Do
 
-Must:
+Now:
 * Ti.to setup and links
-* Sponsor ticket application setup and link
 * Switch out sponsor table placeholder to “TBA”
-* Format panels to be same height
+* Fix flex box for medium window width
 * Fix hero responsiveness (terrible for mobiles currently)
-* Page jumps
 * Stick ticket buttons to bottom of panels
+* Add contact for sponsorship interest
+* Custom url
 
-Maybe:
-* Custom URL
+Later:
+* Sponsor ticket application setup and link
 * Format sponsor images
 * Carousel of Adelaide Hills images
 * Format speaker table
+* Format sponsor images
