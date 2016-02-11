@@ -1,0 +1,30 @@
+//variable overrides
+//brand colors
+$brand-primary:           #1DC21D;
+$brand-secondary:         ghostwhite;
+
+
+//$body-bg:                 transparent !default;
+//text
+//$text-color:              $brand-primary;
+$font-size-base:          20px;
+$font-family-sans-serif:  "Open sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif;
+$headings-font-family:    "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+
+//headings
+$font-size-h1:            floor(($font-size-base * 5));
+$font-size-h2:            floor(($font-size-base * 2));
+
+//navbar
+$navbar-inverse-color:                      $brand-secondary;
+$navbar-inverse-bg:                         $brand-primary;
+$navbar-inverse-border:                     darken($brand-primary, 10%);
+$navbar-inverse-link-color:                 $brand-secondary;
+$navbar-inverse-link-hover-color:           darken($brand-secondary, 10%);
+$navbar-inverse-link-hover-bg:              transparent;
+$navbar-inverse-link-active-color:          $brand-secondary;
+$navbar-inverse-link-active-bg:             darken($brand-primary, 5%);
+$navbar-inverse-brand-hover-color:          $navbar-inverse-link-hover-color;
+
+//panels
+$panel-primary-text:    $brand-secondary;

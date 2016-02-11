@@ -3,7 +3,8 @@
   <head>
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta charset="utf-8">
-    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <!-- <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport"> -->
+    <meta name="viewport" content="width=device-width" />
 
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "Rails Camp Adelaide" %></title>
@@ -41,23 +42,28 @@
 
     <div class="hero-unit">
       <div class="header">
-        <h1>RAILS CAMP ADELAIDE</h1>
-        </br>
-        <div class="col-sm-4">
-          <p>8th - 11th July<p>
-        </div>
-        <div class="col-sm-4">
-          <p>Mylor Adventure Camp<p>
-        </div>
-        <div class="col-sm-4">
-          <p>Buy Tickets<p>
-        </div>
+        <br><br><br><br><br><br><br><br><br><br>
+        <hgroup>
+          <h1>Rails Camp</h1>
+          <h1>Adelaide</h1>
+          </br>
+          <div class="col-sm-4">
+            <p>8th - 11th July<p>
+          </div>
+          <div class="col-sm-4">
+            <p>Mylor Adventure Camp<p>
+          </div>
+          <div class="col-sm-4">
+            <p>Buy Tickets<p>
+          </div>
+        </hgroup>
       </div>
     </div>
 
     <div class="container theme-showcase" role="main">
 
-    <%= yield %>
+
+      <%= yield %>
 
   </div> <!-- /container -->
 

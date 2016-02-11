@@ -1,0 +1,111 @@
+@font-face {
+  font-family: sophia;
+  src: url('fonts/sophia.otf');
+}
+
+
+//customisation
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin-bottom: 50px;
+}
+
+h1 {
+    color: $brand-secondary;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+
+.hero-unit {
+  height: 50rem;
+  background: url(../images/background2.jpg) no-repeat center top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  //margin: 20px 0;
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.header {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 100%;
+
+  color: $brand-secondary;
+  text-align: center;
+  font-weight: bold;
+}
+
+.header h1{
+  font-family: sophia, sans-serif;
+  font-size: 20rem;
+  font-weight: bold;
+  color: #D001FF;
+
+}
+
+.btn-ticket {
+  margin: 10px;
+  bottom: 0;
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: $brand-primary;
+  color: $brand-secondary;
+  text-align: center;
+  font-size: floor(($font-size-base * .8));
+}
+
+//panel height
+@media(min-width:758px) {
+  .flex, .flex > div[class*='col-'] {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      flex:1 0 auto;
+  }
+  .hero-unit{
+    height: 80rem;
+  }
+  .panel {
+     display: flex;
+     flex-direction:column;
+     align-content:stretch;
+  }
+
+  .panel-body {
+     display: flex;
+     flex-grow:1;
+  }
+}
+
+@media(min-width:1200px) {
+  .hero-unit{
+    height: 100rem;
+  }
+}
