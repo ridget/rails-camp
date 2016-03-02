@@ -41,6 +41,4 @@ configure :build do
 
   # Minify Javascript on build
   # activate :minify_javascript
-  activate :relative_assets
-  set :relative_links, true
 end
