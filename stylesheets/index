@@ -1,0 +1,108 @@
+/*
+Error: Undefined variable: "$brand-secondary".
+        on line 18 of /private/var/folders/50/snq58np54hdbbglx95p0bq2w0000gp/T/mgd-XXX.HDszjLAs/clone/source/stylesheets/index.scss
+
+13:   height: 100%;
+14:   margin-bottom: 50px;
+15: }
+16: 
+17: h1 {
+18:     color: $brand-secondary;
+19: }
+20: 
+21: h2 {
+22:   text-align: center;
+23: }
+
+Backtrace:
+/private/var/folders/50/snq58np54hdbbglx95p0bq2w0000gp/T/mgd-XXX.HDszjLAs/clone/source/stylesheets/index.scss:18
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/sass-3.4.21/lib/sass/script/tree/variable.rb:49:in `_perform'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/sass-3.4.21/lib/sass/script/tree/node.rb:50:in `perform'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:395:in `visit_prop'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/sass-3.4.21/lib/sass/stack.rb:79:in `block in with_base'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/sass-3.4.21/lib/sass/stack.rb:115:in `with_frame'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/sass-3.4.21/lib/sass/stack.rb:79:in `with_base'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:431:in `block (2 levels) in visit_rule'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:431:in `map'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:431:in `block in visit_rule'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:429:in `visit_rule'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/sass-3.4.21/lib/sass/stack.rb:79:in `block in with_base'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/sass-3.4.21/lib/sass/stack.rb:115:in `with_frame'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/sass-3.4.21/lib/sass/stack.rb:79:in `with_base'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/sass-3.4.21/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/sass-3.4.21/lib/sass/tree/root_node.rb:20:in `render'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/sass-3.4.21/lib/sass/engine.rb:278:in `render'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/middleman-core-4.0.0/lib/middleman-core/renderers/sass.rb:66:in `evaluate'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/tilt-1.4.1/lib/tilt/template.rb:103:in `render'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/middleman-core-4.0.0/lib/middleman-core/file_renderer.rb:77:in `block in render'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/activesupport-4.2.5/lib/active_support/notifications.rb:166:in `instrument'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/middleman-core-4.0.0/lib/middleman-core/util.rb:120:in `instrument'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/middleman-core-4.0.0/lib/middleman-core/file_renderer.rb:76:in `render'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/middleman-core-4.0.0/lib/middleman-core/template_renderer.rb:95:in `_render_with_all_renderers'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/middleman-core-4.0.0/lib/middleman-core/template_renderer.rb:67:in `render'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/middleman-core-4.0.0/lib/middleman-core/sitemap/resource.rb:139:in `block in render'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/activesupport-4.2.5/lib/active_support/notifications.rb:166:in `instrument'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/middleman-core-4.0.0/lib/middleman-core/util.rb:120:in `instrument'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/middleman-core-4.0.0/lib/middleman-core/sitemap/resource.rb:129:in `render'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/middleman-core-4.0.0/lib/middleman-core/rack.rb:111:in `process_request'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/middleman-core-4.0.0/lib/middleman-core/rack.rb:65:in `block in call'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/middleman-core-4.0.0/lib/middleman-core/rack.rb:64:in `catch'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/middleman-core-4.0.0/lib/middleman-core/rack.rb:64:in `call'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/rack-1.6.4/lib/rack/urlmap.rb:66:in `block in call'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/rack-1.6.4/lib/rack/urlmap.rb:50:in `each'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/rack-1.6.4/lib/rack/urlmap.rb:50:in `call'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/rack-1.6.4/lib/rack/head.rb:13:in `call'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/rack-1.6.4/lib/rack/lint.rb:49:in `_call'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/rack-1.6.4/lib/rack/lint.rb:37:in `call'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/rack-1.6.4/lib/rack/builder.rb:153:in `call'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/rack-1.6.4/lib/rack/mock.rb:74:in `request'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/rack-1.6.4/lib/rack/mock.rb:56:in `get'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/middleman-core-4.0.0/lib/middleman-core/builder.rb:165:in `output_resource'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/middleman-core-4.0.0/lib/middleman-core/builder.rb:95:in `each'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/middleman-core-4.0.0/lib/middleman-core/builder.rb:95:in `output_files'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/middleman-core-4.0.0/lib/middleman-core/builder.rb:59:in `run!'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/middleman-cli-4.0.0/lib/middleman-cli/build.rb:65:in `build'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/thor-0.19.1/lib/thor/invocation.rb:133:in `block in invoke_all'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/thor-0.19.1/lib/thor/invocation.rb:133:in `each'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/thor-0.19.1/lib/thor/invocation.rb:133:in `map'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/thor-0.19.1/lib/thor/invocation.rb:133:in `invoke_all'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/thor-0.19.1/lib/thor/group.rb:232:in `dispatch'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/thor-0.19.1/lib/thor/invocation.rb:115:in `invoke'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/thor-0.19.1/lib/thor.rb:40:in `block in register'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+/Users/usagi/.rvm/gems/ruby-2.2.1/gems/middleman-cli-4.0.0/bin/middleman:23:in `<top (required)>'
+/Users/usagi/.rvm/gems/ruby-2.2.1/bin/middleman:23:in `load'
+/Users/usagi/.rvm/gems/ruby-2.2.1/bin/middleman:23:in `<main>'
+/Users/usagi/.rvm/gems/ruby-2.2.1/bin/ruby_executable_hooks:15:in `eval'
+/Users/usagi/.rvm/gems/ruby-2.2.1/bin/ruby_executable_hooks:15:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$brand-secondary\".\A         on line 18 of /private/var/folders/50/snq58np54hdbbglx95p0bq2w0000gp/T/mgd-XXX.HDszjLAs/clone/source/stylesheets/index.scss\A \A 13:   height: 100%;\A 14:   margin-bottom: 50px;\A 15: }\A 16: \A 17: h1 {\A 18:     color: $brand-secondary;\A 19: }\A 20: \A 21: h2 {\A 22:   text-align: center;\A 23: }"; }
