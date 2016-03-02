@@ -10,6 +10,7 @@
     <title><%= current_page.data.title || "Rails Camp Adelaide" %></title>
 
     <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
     <%= stylesheet_link_tag :site %>
     <%= javascript_include_tag :all %>
@@ -17,6 +18,7 @@
 
   <body class="<%= page_classes %>">
 
+<%#
     <nav class="navbar navbar-inverse navbar-static-top">
       <div class="container">
         <div class="navbar-header">
@@ -39,12 +41,11 @@
         </div><!--/.nav-collapse -->
       </div>
     </nav>
+%>
 
     <div class="hero-unit">
       <div class="header">
-        <hgroup>
-          <img src="images/railscamp19logo.png" alt="RailsCamp 19 Adelaide Hills 8-11 July 2016">
-        </hgroup>
+          <img class="header-image" src="images/railscamp19logo.png" alt="RailsCamp 19 Adelaide Hills 8-11 July 2016">
       </div>
     </div>
 
@@ -56,7 +57,9 @@
   </div> <!-- /container -->
 
   <footer class="footer">
-    Adelaide Hills photography: Copyright John Sexton
+    <p>
+      Header image <i class="fa fa-copyright"></i> John Sexton
+      // <i class="fa fa-copyright"></i> 2016 Rails Camp Adelaide.
   </footer>
   <!-- Bootstrap core JavaScript
   ================================================== -->

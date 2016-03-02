@@ -29,11 +29,14 @@ h3 {
 p {
   text-align: center;
 }
+a {
+  color: $brand-secondary;
+}
 
 
 .hero-unit {
-  height: 50rem;
   background: url(../images/background2.jpg) no-repeat center top;
+  height: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -45,37 +48,52 @@ p {
   margin-bottom: 0;
 }
 
-.header {
-  padding-left: 1rem;
-  padding-right: 1rem;
+.header-image {
   width: 100%;
+  height: auto;
+  padding: 40% 20%;
+}
 
-  color: $brand-secondary;
+.centre {
   text-align: center;
-  font-weight: bold;
 }
 
-.header h1{
-  font-family: againts, sans-serif;
-  font-size: 20rem;
-  font-weight: bold;
-  color: #D001FF;
-
+.list-head {
+  color: $brand-primary;
 }
 
-.btn-ticket {
+.btn {
   margin: 10px;
-  bottom: 0;
+  border-style: solid;
+  border-color: $brand-secondary;
+}
+
+.fa-3x {
+  color: $brand-secondary;
+}
+
+.fa-4x {
+  color: $brand-secondary;
+}
+
+.sponsor {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.yield{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
 }
 
 .footer {
-  position: relative;
-  bottom: 0;
   width: 100%;
   height: 50px;
   background-color: $brand-primary;
-  color: $brand-secondary;
-  text-align: center;
+  color: grey;
   font-size: floor(($font-size-base * .8));
 }
 
@@ -89,23 +107,44 @@ p {
       display: flex;
       flex:1 0 auto;
   }
-  .hero-unit{
-    height: 80rem;
-  }
-  .panel {
-     display: flex;
-     flex-direction:column;
-     align-content:stretch;
+
+  .list-group {
+    display: flex;
+    flex-direction:column;
+    align-content:stretch;
   }
 
-  .panel-body {
-     display: flex;
-     flex-grow:1;
+  .panel-flex {
+    display: flex;
+    flex-grow: 1;
   }
+
+  .flex-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-fa {
+    order: 2;
+  }
+
+  .contact-text {
+    order: 1;
+  }
+
+}
+
+@media(max-width:758px) {
+  .header-image {
+    padding: 40% 10%;
+  }
+
 }
 
 @media(min-width:1200px) {
-  .hero-unit{
-    height: 100rem;
+  .header-image {
+    padding: 20% 20%;
   }
 }
