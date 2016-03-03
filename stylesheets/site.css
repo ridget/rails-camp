@@ -7686,19 +7686,31 @@ a {
   color: #FC064F; }
 
 /* line 79, index.scss */
+.fa-5x {
+  color: #FC064F; }
+
+/* line 83, index.scss */
+#map {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+  height: 250px; }
+
+/* line 91, index.scss */
 .sponsor {
   display: block;
   margin-left: auto;
   margin-right: auto; }
 
-/* line 85, index.scss */
+/* line 97, index.scss */
 .yield {
   display: block;
   margin-left: auto;
   margin-right: auto;
   padding: 20px; }
 
-/* line 92, index.scss */
+/* line 104, index.scss */
 .footer {
   width: 100%;
   height: 50px;
@@ -7707,7 +7719,7 @@ a {
   font-size: 16px; }
 
 @media (min-width: 758px) {
-  /* line 102, index.scss */
+  /* line 114, index.scss */
   .flex, .flex > div[class*='col-'] {
     display: -webkit-box;
     display: -moz-box;
@@ -7716,36 +7728,40 @@ a {
     display: flex;
     flex: 1 0 auto; }
 
-  /* line 111, index.scss */
+  /* line 123, index.scss */
   .list-group {
     display: flex;
     flex-direction: column;
     align-content: stretch; }
 
-  /* line 117, index.scss */
+  /* line 129, index.scss */
   .panel-flex {
     display: flex;
     flex-grow: 1; }
 
-  /* line 122, index.scss */
+  /* line 134, index.scss */
   .flex-div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
 
-  /* line 129, index.scss */
+  /* line 141, index.scss */
   .contact-fa {
     order: 2; }
 
-  /* line 133, index.scss */
+  /* line 145, index.scss */
   .contact-text {
     order: 1; } }
 @media (max-width: 758px) {
-  /* line 140, index.scss */
+  /* line 152, index.scss */
   .header-image {
     padding: 40% 10%; } }
 @media (min-width: 1200px) {
-  /* line 147, index.scss */
+  /* line 159, index.scss */
   .header-image {
     padding: 20% 20%; } }
+@media (max-width: 480px) {
+  /* line 165, index.scss */
+  .footer {
+    height: 75px; } }
