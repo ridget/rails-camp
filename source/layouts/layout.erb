@@ -9,11 +9,11 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "Rails Camp Adelaide" %></title>
 
-    <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
     <%= stylesheet_link_tag :site %>
     <%= javascript_include_tag :all %>
+
+    <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   </head>
 
   <body class="<%= page_classes %>">
@@ -59,7 +59,10 @@
   <footer class="footer">
     <p>
       Header image <i class="fa fa-copyright"></i> John Sexton
-      // <i class="fa fa-copyright"></i> 2016 Rails Camp Adelaide.
+      // Header design <i class="fa fa-copyright"></i> Richie Khoo
+      // <i class="fa fa-copyright"></i> 2016 Rails Camp Adelaide
+      // Design inspiration from Rob McFadzean
+    </p>
   </footer>
   <!-- Bootstrap core JavaScript
   ================================================== -->
@@ -68,6 +71,7 @@
   <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
   <script src="../../dist/js/bootstrap.min.js"></script>
   <script src="../../assets/js/docs.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
   <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
   <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
 </body>

@@ -76,6 +76,18 @@ a {
   color: $brand-secondary;
 }
 
+.fa-5x {
+  color: $brand-secondary;
+}
+
+#map {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+  height: 250px;
+}
+
 .sponsor {
   display: block;
   margin-left: auto;
@@ -146,5 +158,11 @@ a {
 @media(min-width:1200px) {
   .header-image {
     padding: 20% 20%;
+  }
+}
+
+@media(max-width:480px){
+  .footer{
+    height: 75px;
   }
 }
