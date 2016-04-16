@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$brand-secondary".
-        on line 18 of /private/var/folders/50/snq58np54hdbbglx95p0bq2w0000gp/T/mgd-XXX.KKtibigQ/clone/source/stylesheets/index.scss
+        on line 18 of /private/var/folders/50/snq58np54hdbbglx95p0bq2w0000gp/T/mgd-XXX.ZiCmwS0i/clone/source/stylesheets/index.scss
 
 13:   height: 100%;
 14:   margin-bottom: 50px;
@@ -15,7 +15,7 @@ Error: Undefined variable: "$brand-secondary".
 23: }
 
 Backtrace:
-/private/var/folders/50/snq58np54hdbbglx95p0bq2w0000gp/T/mgd-XXX.KKtibigQ/clone/source/stylesheets/index.scss:18
+/private/var/folders/50/snq58np54hdbbglx95p0bq2w0000gp/T/mgd-XXX.ZiCmwS0i/clone/source/stylesheets/index.scss:18
 /Users/usagi/.rvm/gems/ruby-2.2.1/gems/sass-3.4.21/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Users/usagi/.rvm/gems/ruby-2.2.1/gems/sass-3.4.21/lib/sass/script/tree/node.rb:50:in `perform'
 /Users/usagi/.rvm/gems/ruby-2.2.1/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:395:in `visit_prop'
@@ -106,4 +106,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$brand-secondary\".\A         on line 18 of /private/var/folders/50/snq58np54hdbbglx95p0bq2w0000gp/T/mgd-XXX.KKtibigQ/clone/source/stylesheets/index.scss\A \A 13:   height: 100%;\A 14:   margin-bottom: 50px;\A 15: }\A 16: \A 17: h1 {\A 18:     color: $brand-secondary;\A 19: }\A 20: \A 21: h2 {\A 22:   text-align: center;\A 23: }"; }
+  content: "Error: Undefined variable: \"$brand-secondary\".\A         on line 18 of /private/var/folders/50/snq58np54hdbbglx95p0bq2w0000gp/T/mgd-XXX.ZiCmwS0i/clone/source/stylesheets/index.scss\A \A 13:   height: 100%;\A 14:   margin-bottom: 50px;\A 15: }\A 16: \A 17: h1 {\A 18:     color: $brand-secondary;\A 19: }\A 20: \A 21: h2 {\A 22:   text-align: center;\A 23: }"; }
