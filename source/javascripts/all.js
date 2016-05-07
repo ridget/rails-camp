@@ -3,6 +3,8 @@
 var map;
 function initMap() {
   var mapDiv = document.getElementById('map');
+  if (!mapDiv) return;
+
   map = new google.maps.Map(document.getElementById('map'), {
     center: {lat: -34.986682, lng: 138.691938},
     zoom: 10
