@@ -40,14 +40,14 @@ jQuery( document ).ready(function( $ ) {
       .prop("disabled", !enabled);
   }
 
-	$form.submit(function(event){
-		event.preventDefault();
+  $form.submit(function(event){
+    event.preventDefault();
 
-		var serializedData = $form.serialize();
+    var serializedData = $form.serialize();
     enableForm(false);
     showResult('Sending data...');
 
-		// fire off the request to /form.php
+    // fire off the request to /form.php
     submitForm(serializedData)
       .done(function() {
         showResult("Thanks for your submission!");
@@ -55,9 +55,9 @@ jQuery( document ).ready(function( $ ) {
       .fail(function(jqXHR, textStatus, errorThrown) {
         showResult("Sorry, but something went wrong...");
         console.error("The following error occured: "+ textStatus, errorThrown);
-		  })
-		  .always(function () {
+      })
+      .always(function () {
         enableForm(true);
       });
-	});
+  });
 });
