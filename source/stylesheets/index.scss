@@ -51,6 +51,9 @@ a {
 .header-image {
   width: 100%;
   height: auto;
+}
+
+.header {
   padding: 40% 20%;
 }
 
@@ -149,14 +152,14 @@ a {
 }
 
 @media(max-width:758px) {
-  .header-image {
+  .header {
     padding: 40% 10%;
   }
 
 }
 
 @media(min-width:1200px) {
-  .header-image {
+  .header {
     padding: 20% 20%;
   }
 }
