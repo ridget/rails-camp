@@ -1,9 +1,31 @@
 </br>
-<form id="foo">
-  <p><label for="name">Name:</label>
-  <input id="name" name="name" type="text" value=""/></p>
-  <p><label for="comment">Comment:</label><br/>
-  <textarea id="comment" name="comment" cols="40"></textarea></p>
+<form id="sponsorship-form">
+  <div class="form-group">
+    <label for="name">Full Name</label>
+    <input type="text" class="form-control" id="name" name="name" value=""/>
+  </div>
+  <div class="form-group">
+    <label for="email">Email</label><br/>
+    <input type="text" class="form-control" id="email" name="email" value=""/>
+  </div>
+  <div class="form-group">
+    <label for="programming-experience">Please breifly describe your programing experience/background</label>
+    <textarea class="form-control" rows="4" id="programming-experince" name="programming-experince" cols="40"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="reason-for-application">How will a sponsored ticket help you in your study or career?</label><br/>
+    <textarea class="form-control" rows="4" id="reason-for-application" name="reason-for-application" cols="40"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="adult">Are you 18 or older?</label>
+    <input type="radio" class="form-control" id="adult" name="adult" value="yes"> Yes<br>
+    <input type="radio" class="form-control" id="adult" name="adult" value="no"> No<br>
+  </div>
+  <div class="form-group">
+    <label for="coc">Are you willing to agree to the <a href="http://ruby.org.au/code-of-conduct.html">Ruby Australia code of conduct</a>?</label>
+    <input type="radio" class="form-control" id="coc" name="coc" value="yes">Yes<br>
+    <input type="radio" class="form-control" id="coc" name="coc" value="no">No<br>
+  </div>
   <p id="result"></p>
-  <input type="submit" value="Send"/>
+  <input type="submit" class="btn btn-default" value="Send"/>
 </form>
