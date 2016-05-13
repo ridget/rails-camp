@@ -24,6 +24,7 @@ jQuery( document ).ready(function( $ ) {
   // Don't fire if no form on page
   if ($form.length === 0) return
 
+
   // Helper functions
   // submit the form and return a promise
   function submitForm(serializedData) {
@@ -40,24 +41,27 @@ jQuery( document ).ready(function( $ ) {
       .prop("disabled", !enabled);
   }
 
-  $form.submit(function(event){
-    event.preventDefault();
+  $("$sponsorship-form").validate({
+    $form.submit(function(event){
+      $("#sponsorship-form").validate();
+      event.preventDefault();
 
-    var serializedData = $form.serialize();
-    enableForm(false);
-    showResult('Sending data...');
+      var serializedData = $form.serialize();
+      enableForm(false);
+      showResult('Sending data...');
 
-    // fire off the request to /form.php
-    submitForm(serializedData)
-      .done(function() {
-        showResult("Thanks for your submission!");
-      })
-      .fail(function(jqXHR, textStatus, errorThrown) {
-        showResult("Sorry, but something went wrong...");
-        console.error("The following error occured: "+ textStatus, errorThrown);
-      })
-      .always(function () {
-        enableForm(true);
-      });
+      // fire off the request to /form.php
+      submitForm(serializedData)
+        .done(function() {
+          showResult("Thanks for your submission!");
+        })
+        .fail(function(jqXHR, textStatus, errorThrown) {
+          showResult("Sorry, but something went wrong...");
+          console.error("The following error occured: "+ textStatus, errorThrown);
+        })
+        .always(function () {
+          enableForm(true);
+        });
+    });
   });
 });
