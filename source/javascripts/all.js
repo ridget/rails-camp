@@ -24,7 +24,6 @@ jQuery( document ).ready(function( $ ) {
   // Don't fire if no form on page
   if ($form.length === 0) return
 
-
   // Helper functions
   // submit the form and return a promise
   function submitForm(serializedData) {
@@ -41,9 +40,21 @@ jQuery( document ).ready(function( $ ) {
       .prop("disabled", !enabled);
   }
 
-  $("$sponsorship-form").validate({
+  $("#sponsorship-form").validate({
+    errorPlacement: function(error, element) {
+       if (element.is(":checkbox")) {
+         error.appendTo(element.parent());
+       } else {
+         error.insertAfter(element);
+       }
+     }
+   });
+
+  var valid;
+  valid === $("#sponsorship-form").validate();
+
+  if (valid) {
     $form.submit(function(event){
-      $("#sponsorship-form").validate();
       event.preventDefault();
 
       var serializedData = $form.serialize();
@@ -63,5 +74,6 @@ jQuery( document ).ready(function( $ ) {
           enableForm(true);
         });
     });
-  });
+  }
+
 });
