@@ -21,18 +21,10 @@ See [Bootstrap Sass](https://github.com/twbs/bootstrap-sass) for Bootstrap info.
 
 ## To Do
 
-Now:
-* Ti.to setup and links
-* Switch out sponsor table placeholder to “TBA”
-* Fix flex box for medium window width
-* Fix hero responsiveness (terrible for mobiles currently)
-* Stick ticket buttons to bottom of panels
-* Add contact for sponsorship interest
 * Custom url
-
-Later:
-* Sponsor ticket application setup and link
-* Format sponsor images
+* Speaker application form
+* Format and add sponsor images
 * Carousel of Adelaide Hills images
 * Format speaker table
 * Format sponsor images
+* faq questions
