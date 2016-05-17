@@ -7660,36 +7660,39 @@ a {
 /* line 51, index.scss */
 .header-image {
   width: 100%;
-  height: auto;
+  height: auto; }
+
+/* line 56, index.scss */
+.header {
   padding: 40% 20%; }
 
-/* line 57, index.scss */
+/* line 60, index.scss */
 .centre {
   text-align: center; }
 
-/* line 61, index.scss */
+/* line 64, index.scss */
 .list-head {
   color: #424F30; }
 
-/* line 65, index.scss */
+/* line 68, index.scss */
 .btn {
   margin: 10px;
   border-style: solid;
   border-color: #FC064F; }
 
-/* line 71, index.scss */
+/* line 74, index.scss */
 .fa-3x {
   color: #FC064F; }
 
-/* line 75, index.scss */
+/* line 78, index.scss */
 .fa-4x {
   color: #FC064F; }
 
-/* line 79, index.scss */
+/* line 82, index.scss */
 .fa-5x {
   color: #FC064F; }
 
-/* line 83, index.scss */
+/* line 86, index.scss */
 #map {
   display: block;
   margin-left: auto;
@@ -7697,20 +7700,20 @@ a {
   width: 250px;
   height: 250px; }
 
-/* line 91, index.scss */
+/* line 94, index.scss */
 .sponsor {
   display: block;
   margin-left: auto;
   margin-right: auto; }
 
-/* line 97, index.scss */
+/* line 100, index.scss */
 .yield {
   display: block;
   margin-left: auto;
   margin-right: auto;
   padding: 20px; }
 
-/* line 104, index.scss */
+/* line 107, index.scss */
 .footer {
   width: 100%;
   height: 50px;
@@ -7719,7 +7722,7 @@ a {
   font-size: 16px; }
 
 @media (min-width: 758px) {
-  /* line 114, index.scss */
+  /* line 117, index.scss */
   .flex, .flex > div[class*='col-'] {
     display: -webkit-box;
     display: -moz-box;
@@ -7728,40 +7731,40 @@ a {
     display: flex;
     flex: 1 0 auto; }
 
-  /* line 123, index.scss */
+  /* line 126, index.scss */
   .list-group {
     display: flex;
     flex-direction: column;
     align-content: stretch; }
 
-  /* line 129, index.scss */
+  /* line 132, index.scss */
   .panel-flex {
     display: flex;
     flex-grow: 1; }
 
-  /* line 134, index.scss */
+  /* line 137, index.scss */
   .flex-div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
 
-  /* line 141, index.scss */
+  /* line 144, index.scss */
   .contact-fa {
     order: 2; }
 
-  /* line 145, index.scss */
+  /* line 148, index.scss */
   .contact-text {
     order: 1; } }
 @media (max-width: 758px) {
-  /* line 152, index.scss */
-  .header-image {
+  /* line 155, index.scss */
+  .header {
     padding: 40% 10%; } }
 @media (min-width: 1200px) {
-  /* line 159, index.scss */
-  .header-image {
+  /* line 162, index.scss */
+  .header {
     padding: 20% 20%; } }
 @media (max-width: 480px) {
-  /* line 165, index.scss */
+  /* line 168, index.scss */
   .footer {
     height: 75px; } }

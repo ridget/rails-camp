@@ -9,11 +9,18 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title>Rails Camp Adelaide</title>
 
-    <link href="stylesheets/site.css" rel="stylesheet" />
+    <!-- Javascript -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.js"></script>
     <script src="javascripts/all.js"></script>
 
+    <!-- Fonts -->
     <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- Styles -->
+    <link href="stylesheets/site.css" rel="stylesheet" />
   </head>
 
   <body class="index">
@@ -21,7 +28,7 @@
 
     <div class="hero-unit">
       <div class="header">
-          <img class="header-image" src="images/railscamp19logo.png" alt="RailsCamp 19 Adelaide Hills 8-11 July 2016">
+        <a href="/index.html"><img class="header-image" src="images/railscamp19logo.png" alt="RailsCamp 19 Adelaide Hills 8-11 July 2016"></a>
       </div>
     </div>
 
@@ -161,7 +168,7 @@
           For those who can't afford concession tickets. Applications open soon.
         </li>
         <li class="list-group-item centre">
-          <a href="application link here" class="btn " role="button">Opening soon</a>
+          <a href="sponsor_form.html#sponsor" class="btn " role="button">Apply now</a>
         </li>
       </ul>
     </div><!-- /.col-sm-4 -->
@@ -281,6 +288,8 @@
           If you have severe allergies please include this information and bring along your EpiPen.</li>
         <h4 class="list-group-item list-head">How do I sign up for the Monday lunch or activity course if I already have my ticket?</h4>
         <li class="list-group-item">Just email us with your name and ticket code and we will add you, assuming there is space!</li>
+        <h4 class="list-group-item list-head">I am signed up for the Monday lunch or activity course and I no longer wish to attend do I need to cancel my upgrade?</h4>
+        <li class="list-group-item">Yes, please email us with your name and ticket code so we can free up a spot for someone else.</li>
     </div>
   </div>
 </div>
@@ -318,8 +327,6 @@
   </div>
 </div>
 
-<img src="images/display_yield.png" alt="yield tent" class="yield">
-
 <!-- <div class="row">
   <table class="table">
     <tbody>
@@ -343,6 +350,7 @@
 </div> -->
 
 
+      <img src="images/display_yield.png" alt="yield tent" class="yield">
   </div> <!-- /container -->
 
   <footer class="footer">
@@ -353,15 +361,5 @@
       // Design inspiration from Rob McFadzean
     </p>
   </footer>
-  <!-- Bootstrap core JavaScript
-  ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-  <script src="../../dist/js/bootstrap.min.js"></script>
-  <script src="../../assets/js/docs.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
-  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-  <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
 </body>
 </html>

@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <!-- <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport"> -->
+    <meta name="viewport" content="width=device-width" />
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>Rails Camp Adelaide</title>
+
+    <!-- Javascript -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.js"></script>
+    <script src="javascripts/all.js"></script>
+
+    <!-- Fonts -->
+    <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- Styles -->
+    <link href="stylesheets/site.css" rel="stylesheet" />
+  </head>
+
+  <body class="sponsor_form">
+
+
+    <div class="hero-unit">
+      <div class="header">
+        <a href="/index.html"><img class="header-image" src="images/railscamp19logo.png" alt="RailsCamp 19 Adelaide Hills 8-11 July 2016"></a>
+      </div>
+    </div>
+
+    <div class="container theme-showcase" role="main">
+
+
+      </br>
+<div id="sponsor" class="well">
+  <h2>Sponsored Ticket Form</h2>
+  <p>
+    We have a limited number of sponsored tickets for low income earners, students,
+    and other under represented peoples within the community.
+    Should you be selected, the ticket will include accomodation, food and drink, and transport from the CBD or airport.
+    Sponsored tickets unfortunately do not include interstate travel expenses.
+    </br>
+    </br>
+    Applications are open until Tuesday the 31st of May.
+    Offers will be sent out via email by Thursday the 2nd of July.
+    Please respond to offers as quickly as possible so we can sure up numbers and offer places to others should you not be able to attend.
+  </p>
+  <form id="sponsorship-form">
+    <div class="form-group">
+      <label for="name">Full Name*</label>
+      <input type="text" minlength="5" class="form-control" id="name" name="name" value="" required/>
+    </div>
+    <div class="form-group">
+      <label for="email">Email*</label><br/>
+      <input type="email" class="form-control" id="email" name="email" value="" required/>
+    </div>
+    <div class="form-group">
+      <label for="programming-experience">Please briefly describe your programing experience/background*</label>
+      <textarea class="form-control" rows="4" id="programming-experience" name="programming-experince" cols="40" required></textarea>
+    </div>
+    <div class="form-group">
+      <label for="reason-for-application">How will a sponsored ticket help you in your study or career?*</label><br/>
+      <textarea class="form-control" rows="4" id="reason-for-application" name="reason-for-application" cols="40" required></textarea>
+    </div>
+    <div class="form-group">
+      <label for="adult">We are unable to accomodate minors at this time, please confirm you are 18 or over.*</label></br>
+          <input type="checkbox" id="adult" name="adult" value="yes" required> I am an adult.</input>
+    </div>
+    <div class="form-group">
+      <label for="coc">Are you willing to agree to the <a href="http://ruby.org.au/code-of-conduct.html">Ruby Australia code of conduct</a>?*</label></br>
+        <input type="checkbox" id="coc" name="coc" value="yes" required> Yes</input>
+    </div>
+    <input type="submit" class="btn btn-default" value="Send"/>
+  </form>
+  <div style='display:none' id='result'></div>
+</div>
+
+
+      <img src="images/display_yield.png" alt="yield tent" class="yield">
+  </div> <!-- /container -->
+
+  <footer class="footer">
+    <p>
+      Header image <i class="fa fa-copyright"></i> John Sexton
+      // Header design <i class="fa fa-copyright"></i> Richie Khoo
+      // <i class="fa fa-copyright"></i> 2016 Rails Camp Adelaide
+      // Design inspiration from Rob McFadzean
+    </p>
+  </footer>
+</body>
+</html>
