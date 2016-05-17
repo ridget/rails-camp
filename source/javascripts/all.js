@@ -24,56 +24,63 @@ jQuery( document ).ready(function( $ ) {
   // Don't fire if no form on page
   if ($form.length === 0) return
 
-  // Helper functions
   // submit the form and return a promise
   function submitForm(serializedData) {
     return $.ajax({ url: gappsUrl, type: "post", data: serializedData });
   }
 
+  // show a result -- what happened?
   function showResult(result) {
-    $('#result').html(result)
+    $('#result').html(result).show()
   }
 
-  function enableForm(enabled) {
+  // enable or disable the form during submission
+  function enableForm() {
+    toggleForm(true);
+  }
+
+  function disableForm() {
+    toggleForm(false);
+  }
+
+  function toggleForm(enabled) {
     $form
       .find("input, select, button, textarea")
       .prop("disabled", !enabled);
+
+    if (enabled) $form.show()
+    else $form.slideUp()
   }
 
-  $("#sponsorship-form").validate({
+  // handle the form submission -- coordination
+  function submitHandler (form, event) {
+    event.preventDefault();
+
+    var serializedData = $form.serialize();
+    showResult("<div class='alert alert-notice'>Just a moment, submitting your form now...</div>");
+    disableForm()
+
+    // fire off the request
+    submitForm(serializedData)
+      .done(function() {
+        showResult("<div class='alert alert-info'>Thanks for your submission! We'll review it shortly.</div>");
+      })
+      .fail(function() {
+        showResult("<div class='alert alert-error'>Sorry, but something went wrong...>");
+        console.error("The following error occured: ", arguments);
+        enableForm();
+      })
+  }
+
+  // Setup validator, and submit handler pass through when valid
+  $form.validate({
+    submitHandler: submitHandler,
     errorPlacement: function(error, element) {
-       if (element.is(":checkbox")) {
-         error.appendTo(element.parent());
-       } else {
-         error.insertAfter(element);
-       }
-     }
-   });
-
-  var valid;
-  valid === $("#sponsorship-form").validate();
-
-  if (valid) {
-    $form.submit(function(event){
-      event.preventDefault();
-
-      var serializedData = $form.serialize();
-      enableForm(false);
-      showResult('Sending data...');
-
-      // fire off the request to /form.php
-      submitForm(serializedData)
-        .done(function() {
-          showResult("Thanks for your submission!");
-        })
-        .fail(function(jqXHR, textStatus, errorThrown) {
-          showResult("Sorry, but something went wrong...");
-          console.error("The following error occured: "+ textStatus, errorThrown);
-        })
-        .always(function () {
-          enableForm(true);
-        });
-    });
-  }
-
+      if (element.is(":checkbox")) {
+        error.appendTo(element.parent());
+      } else {
+        error.insertAfter(element);
+      }
+    }
+  });
 });
