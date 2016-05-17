@@ -66,7 +66,7 @@ jQuery( document ).ready(function( $ ) {
         showResult("<div class='alert alert-info'>Thanks for your submission! We'll review it shortly.</div>");
       })
       .fail(function() {
-        showResult("<div class='alert alert-error'>Sorry, but something went wrong...>");
+        showResult("<div class='alert alert-error'>Sorry, but something went wrong...</div>");
         console.error("The following error occured: ", arguments);
         enableForm();
       })
