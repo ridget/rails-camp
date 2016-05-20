@@ -7681,18 +7681,10 @@ a {
   border-color: #FC064F; }
 
 /* line 74, index.scss */
-.fa-3x {
+.fa {
   color: #FC064F; }
 
 /* line 78, index.scss */
-.fa-4x {
-  color: #FC064F; }
-
-/* line 82, index.scss */
-.fa-5x {
-  color: #FC064F; }
-
-/* line 86, index.scss */
 #map {
   display: block;
   margin-left: auto;
@@ -7700,29 +7692,32 @@ a {
   width: 250px;
   height: 250px; }
 
-/* line 94, index.scss */
+/* line 86, index.scss */
 .sponsor {
   display: block;
   margin-left: auto;
   margin-right: auto; }
 
-/* line 100, index.scss */
+/* line 92, index.scss */
 .yield {
   display: block;
   margin-left: auto;
   margin-right: auto;
   padding: 20px; }
 
-/* line 107, index.scss */
+/* line 99, index.scss */
 .footer {
   width: 100%;
   height: 50px;
   background-color: #424F30;
   color: grey;
   font-size: 16px; }
+  /* line 104, index.scss */
+  .footer .fa {
+    color: grey; }
 
 @media (min-width: 758px) {
-  /* line 117, index.scss */
+  /* line 112, index.scss */
   .flex, .flex > div[class*='col-'] {
     display: -webkit-box;
     display: -moz-box;
@@ -7731,40 +7726,40 @@ a {
     display: flex;
     flex: 1 0 auto; }
 
-  /* line 126, index.scss */
+  /* line 121, index.scss */
   .list-group {
     display: flex;
     flex-direction: column;
     align-content: stretch; }
 
-  /* line 132, index.scss */
+  /* line 127, index.scss */
   .panel-flex {
     display: flex;
     flex-grow: 1; }
 
-  /* line 137, index.scss */
+  /* line 132, index.scss */
   .flex-div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
 
-  /* line 144, index.scss */
+  /* line 139, index.scss */
   .contact-fa {
     order: 2; }
 
-  /* line 148, index.scss */
+  /* line 143, index.scss */
   .contact-text {
     order: 1; } }
 @media (max-width: 758px) {
-  /* line 155, index.scss */
+  /* line 150, index.scss */
   .header {
     padding: 40% 10%; } }
 @media (min-width: 1200px) {
-  /* line 162, index.scss */
+  /* line 157, index.scss */
   .header {
     padding: 20% 20%; } }
 @media (max-width: 480px) {
-  /* line 168, index.scss */
+  /* line 163, index.scss */
   .footer {
     height: 75px; } }
