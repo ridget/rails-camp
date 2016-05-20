@@ -71,15 +71,7 @@ a {
   border-color: $brand-secondary;
 }
 
-.fa-3x {
-  color: $brand-secondary;
-}
-
-.fa-4x {
-  color: $brand-secondary;
-}
-
-.fa-5x {
+.fa {
   color: $brand-secondary;
 }
 
@@ -109,6 +101,9 @@ a {
   height: 50px;
   background-color: $brand-primary;
   color: grey;
+  .fa {
+    color:grey;
+  }
   font-size: floor(($font-size-base * .8));
 }
 
