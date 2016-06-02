@@ -7685,6 +7685,10 @@ a {
   color: #FC064F; }
 
 /* line 78, index.scss */
+.sponsor-container {
+  background-color: white; }
+
+/* line 82, index.scss */
 #map {
   display: block;
   margin-left: auto;
@@ -7692,32 +7696,32 @@ a {
   width: 250px;
   height: 250px; }
 
-/* line 86, index.scss */
+/* line 90, index.scss */
 .sponsor {
   display: block;
   margin-left: auto;
   margin-right: auto; }
 
-/* line 92, index.scss */
+/* line 96, index.scss */
 .yield {
   display: block;
   margin-left: auto;
   margin-right: auto;
   padding: 20px; }
 
-/* line 99, index.scss */
+/* line 103, index.scss */
 .footer {
   width: 100%;
   height: 50px;
   background-color: #424F30;
   color: grey;
   font-size: 16px; }
-  /* line 104, index.scss */
+  /* line 108, index.scss */
   .footer .fa {
     color: grey; }
 
 @media (min-width: 758px) {
-  /* line 112, index.scss */
+  /* line 116, index.scss */
   .flex, .flex > div[class*='col-'] {
     display: -webkit-box;
     display: -moz-box;
@@ -7726,40 +7730,40 @@ a {
     display: flex;
     flex: 1 0 auto; }
 
-  /* line 121, index.scss */
+  /* line 125, index.scss */
   .list-group {
     display: flex;
     flex-direction: column;
     align-content: stretch; }
 
-  /* line 127, index.scss */
+  /* line 131, index.scss */
   .panel-flex {
     display: flex;
     flex-grow: 1; }
 
-  /* line 132, index.scss */
+  /* line 136, index.scss */
   .flex-div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
 
-  /* line 139, index.scss */
+  /* line 143, index.scss */
   .contact-fa {
     order: 2; }
 
-  /* line 143, index.scss */
+  /* line 147, index.scss */
   .contact-text {
     order: 1; } }
 @media (max-width: 758px) {
-  /* line 150, index.scss */
+  /* line 154, index.scss */
   .header {
     padding: 40% 10%; } }
 @media (min-width: 1200px) {
-  /* line 157, index.scss */
+  /* line 161, index.scss */
   .header {
     padding: 20% 20%; } }
 @media (max-width: 480px) {
-  /* line 163, index.scss */
+  /* line 167, index.scss */
   .footer {
     height: 75px; } }
