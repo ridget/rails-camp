@@ -7758,12 +7758,16 @@ a {
 @media (max-width: 758px) {
   /* line 154, index.scss */
   .header {
-    padding: 40% 10%; } }
+    padding: 40% 10%; }
+
+  /* line 158, index.scss */
+  .sponsor {
+    padding: 10px; } }
 @media (min-width: 1200px) {
-  /* line 161, index.scss */
+  /* line 165, index.scss */
   .header {
     padding: 20% 20%; } }
 @media (max-width: 480px) {
-  /* line 167, index.scss */
+  /* line 171, index.scss */
   .footer {
     height: 75px; } }
