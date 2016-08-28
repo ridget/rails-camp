@@ -1,238 +1,258 @@
+<!doctype html>
+<html>
+<head>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta charset="utf-8">
+  <!-- <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport"> -->
+  <meta name="viewport" content="width=device-width"/>
 
-</br>
+  <!-- Use title if it's in the page YAML frontmatter -->
+  <title>Rails Camp Queensland</title>
 
-<div id="info" class="well">
-  <h2>About <span style="color:#FC064F">#RailsCampAdl</span></h2>
-  <p>
-    Rails Camp is a full weekend retreat for people interested in
-    web development to gather and be awesome together.
-    People attend for a variety of reasons:
-    socialising, hacking, learning, teaching, drinking, gaming, and more.
-    Though there is a focus on Ruby,
-    we welcome anyone interested in programming or web technologies to join us.
-  </p>
+  <!-- Javascript -->
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvdo_7z_MWK5Qs-APEHkDrRra4qXrAKkI&callback=initMap" async defer></script>
+  <script src="javascripts/all.js"></script>
 
-  <div class="row flex">
-    <div class="col-sm-3">
-      <ul class="list-group">
-        <h4 class="list-group-item centre list-head">Friday</h4>
-        <li class="list-group-item panel-flex centre">
-          Buses to campsite, welcome talk, dinner, socialising
-        </li>
-      </ul>
-    </div><!-- /.col-sm-3 -->
+  <!-- Fonts -->
+  <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-    <div class="col-sm-3">
-      <ul class="list-group">
-        <h4 class="list-group-item centre list-head">Saturday</h4>
-        <li class="list-group-item centre panel-flex">
-          Activity course, talks, hacking, socialising
-        </li>
-      </ul>
-    </div><!-- /.col-sm-3 -->
+  <!-- Styles -->
+  <link href="stylesheets/site.css" rel="stylesheet"/>
+</head>
 
-    <div class="col-sm-3">
-      <ul class="list-group">
-        <h4 class="list-group-item centre list-head">Sunday</h4>
-        <li class="list-group-item centre panel-flex">
-          Talks, Ruby Australia meeting, hacking, socialising, demos
-        </li>
-      </ul>
-    </div><!-- /.col-sm-3 -->
+<body class="index">
+
+<div class="container theme-showcase" role="main">
+
+  </br>
+
+  <div id="info" class="well">
+    <h2>About <span style="color:#FC064F">#RailsCampQld</span></h2>
+    <p>
+      Rails Camp is a full weekend retreat for people interested in
+      web development to gather and be awesome together.
+      People attend for a variety of reasons:
+      socialising, hacking, learning, teaching, drinking, gaming, and more.
+      Though there is a focus on Ruby,
+      we welcome anyone interested in programming or web technologies to join us.
+    </p>
+
+    <div class="row flex">
+      <div class="col-sm-3">
+        <ul class="list-group">
+          <h4 class="list-group-item centre list-head">Friday</h4>
+          <li class="list-group-item panel-flex centre">
+            Buses to campsite, welcome talk, dinner, socialising
+          </li>
+        </ul>
+      </div><!-- /.col-sm-3 -->
+
+      <div class="col-sm-3">
+        <ul class="list-group">
+          <h4 class="list-group-item centre list-head">Saturday</h4>
+          <li class="list-group-item centre panel-flex">
+            Talks, hacking, socialising
+          </li>
+        </ul>
+      </div><!-- /.col-sm-3 -->
+
+      <div class="col-sm-3">
+        <ul class="list-group">
+          <h4 class="list-group-item centre list-head">Sunday</h4>
+          <li class="list-group-item centre panel-flex">
+            Talks, Ruby Australia meeting, hacking, socialising, demos
+          </li>
+        </ul>
+      </div><!-- /.col-sm-3 -->
 
       <div class="col-sm-3">
         <ul class="list-group">
           <h4 class="list-group-item centre list-head">Monday</h4>
           <li class="list-group-item centre panel-flex">
-            Buses to CBD and airport, optional lunch
+            Buses to CBD and airport
           </li>
         </ul>
-    </div><!-- /.col-sm-3 -->
-  </div>
-
-  <div class="row flex">
-    <div class="col-sm-5 flex-div contact-fa">
-      <div id="map" class="img-rounded"></div>
-    </div>
-    <div class="col-sm-1 flex-div contact-text">
-    </div>
-    <div class="col-sm-6 flex-div contact-text">
-      <p>
-        This camp will be held at
-        Mylor Adventure Camp in the stunning Adelaide Hills
-        from the 8th to the 11th of July.
-        </br>
-        </br>
-        Tickets are now closed. Please see our <a HREF="#faq">FAQ</a> and <a HREF="#bring">What to Bring</a>
-        sections for more information or <a HREF="#contact">Contact Us</a>
-        if you have any questions.
-      </p>
-    </div>
-  </div>
-
-</div>
-
-<div id="tickets" class="well">
-  <div class="centre"><i class="fa fa-ticket fa-3x"></i></div>
-  <h2><i class="fa fa-diamond"></i> Ticket sales are closed! <i class="fa fa-diamond"></i></h2>
-</div>
-
-<div class="well">
-  <h2>Sponsors</h2>
-</br>
-  <div class="sponsor-container">
-    <h4 class="list-head centre">Ruby</h4>
-    <div class="row">
-      <div class="col-sm-12 col-md-6">
-      <img class="sponsor" src="images/sponsors/envato-400x102.png" alt="RubyAU Logo"/>
-      </div>
-      <div class="col-sm-12 col-md-6">
-        <img class="sponsor" src="images/sponsors/REA-400x102.png" alt="RubyAU Logo"/>
       </div>
     </div>
+
+    <div class="row flex">
+      <div class="col-sm-5 flex-div contact-fa">
+        <div id="map" class="img-rounded"></div>
+      </div>
+      <div class="col-sm-1 flex-div contact-text">
+      </div>
+      <div class="col-sm-6 flex-div contact-text">
+        <p>
+          This camp will be held at
+          Koonjewarre in Springbrook
+          from the 9th to the 12th of December.
+          </br>
+          </br>
+          Please see our <a HREF="#tickets">Ticket</a> section for pricing,
+          <a HREF="#faq">FAQ</a> and <a HREF="#bring">What to Bring</a>
+          sections for more information or <a HREF="#contact">Contact Us</a>
+          if you have any questions.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="tickets" class="well">
+    <div class="centre"><i class="fa fa-ticket fa-3x"></i></div>
+    <h2>Tickets</h2>
+    <p>
+      Campers are expected to follow the
+      <a href="http://ruby.org.au/code-of-conduct.html">Ruby Australia code of conduct</a>.
+      </br>
+      Please read the CoC before you purchase your ticket.
+      </br>
+      </br>
+      Tickets cover accomodation,
+      food & drinks, as well as transport to and from the airport or CBD.
+      </br>
+      Prices are in AUD and are GST inclusive.
+      </br>
+      </br>
+    </p>
+    <h3><i class="fa fa-diamond"></i> Sales close _! <i class="fa fa-diamond"></i></h3>
     </br>
-    <h4 class="list-head centre">Emerald</h4>
+  </div>
+
+  <div class="well">
+    <h2>Sponsors</h2>
+    <p>
+      We are looking for sponsors!
+      </br>
+      Please take a look at the Ruby Australia
+      <a href="http://ruby.org.au/sponsorship.html">sponsorship prospectus</a>
+      and <a href="mailto:railscamp@ruby.org.au">contact us</a> if you are interested.
+      </br>
+      </br>
+    </p>
+    <img class="sponsor" src="images/rubyau.png" alt="RubyAU Logo"/>
+    </br>
+  </div>
+
+  <div class="well">
+    <div class="row flex">
+      <div class="col-sm-4 flex-div">
+        <div class="centre"><i class="fa fa-users fa-4x centre"></i></div>
+      </div>
+      <div class="col-sm-8 flex-div">
+        <h2>Speakers</h2>
+        <p>
+          The weekend is open for attendees to present.
+          </br>
+          If you'd like to give a talk, please <a href="mailto:railscamp@ruby.org.au">contact us</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="contact" class="well">
+    <div class="row flex">
+      <div class="col-sm-4 flex-div contact-fa">
+        <div class="centre"><i class="fa fa-envelope fa-5x flex-div"></i></div>
+      </div>
+      <div class="col-sm-8 flex-div contact-text">
+        <h2>Contact</h2>
+        <p>
+          <b>Email:</b> railscamp@ruby.org.au
+          </br>
+          </br>
+          <a href="https://twitter.com/railscamp_au">
+            <i class="fa fa-twitter fa-2x"></i>
+          </a>
+          <a href="https://rubyau-slack.herokuapp.com">
+            <i class="fa fa-slack fa-2x"></i>
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="faq" class="well">
+    <div class="centre"><i class="fa fa-question-circle fa-3x"></i></div>
+    <h2>
+      FAQ
+    </h2>
     <div class="row">
-      <div class="col-sm-12 col-md-6">
-        <img class="sponsor" src="images/sponsors/culture-amp-300x61.png" alt="RubyAU Logo"/>
-      </div>
-      <div class="col-sm-12 col-md-6">
-        <img class="sponsor" src="images/sponsors/lookahead-300x61.png" alt="RubyAU Logo"/>
-      </div>
-    </div>
-  </br>
-  </div>
-</div>
-
-<div class="well">
-  <div class="row flex">
-    <div class="col-sm-4 flex-div">
-      <div class="centre"><i class="fa fa-users fa-4x centre"></i></div>
-    </div>
-    <div class="col-sm-8 flex-div">
-      <h2>Speakers</h2>
-      <p>
-        The weekend is open for attendees to present.
-        </br>
-        If you'd like to give a talk, please <a href="mailto:railscamp@ruby.org.au">contact us</a>.
-      </p>
-    </div>
-  </div>
-</div>
-
-<div id="contact" class="well">
-  <div class="row flex">
-    <div class="col-sm-4 flex-div contact-fa">
-      <div class="centre"><i class="fa fa-envelope fa-5x flex-div"></i></div>
-    </div>
-    <div class="col-sm-8 flex-div contact-text">
-      <h2>Contact</h2>
-      <p>
-        <b>Email:</b> railscamp@ruby.org.au
-        </br>
-        </br>
-        <a href="https://twitter.com/railscamp_au">
-          <i class="fa fa-twitter fa-2x"></i>
-        </a>
-        <a href="https://rubyau-slack.herokuapp.com">
-          <i class="fa fa-slack fa-2x"></i>
-        </a>
-      </p>
-    </div>
-  </div>
-</div>
-
-<div id="faq" class="well">
-  <div class="centre"><i class="fa fa-question-circle fa-3x"></i></div>
-  <h2>
-    FAQ
-  </h2>
-  <div class="row">
-    <div class="col-sm-12">
+      <div class="col-sm-12">
         <h3>For the uninitiated</h3>
         <h4 class="list-group-item list-head">Do I have to sleep in a tent?</h4>
-        <li class="list-group-item">By default every ticket includes a bed in a shared dorm room. We have gendered dorms, unisex dorms and couples rooms which you can choose from after purchase. There is also camping space if you so choose, but you need to bring your own tent.</li>
+        <li class="list-group-item">By default every ticket includes a bed in a shared dorm room. We have
+          gendered dorms, unisex dorms and couples rooms which you can choose from after purchase. There is
+          also camping space if you so choose, but you need to bring your own tent.
+        </li>
         <h4 class="list-group-item list-head">Will there be internet access at the camp?</h4>
-        <li class="list-group-item">The campground has pockets of 3g depending on your carrier, some of which are inside, which is handy because rain. It's probably best to assume you won't have internet access and plan accordingly.</li>
+        <li class="list-group-item">The campground has pockets of 3g depending on your carrier, some of
+          which are inside, which is handy because rain. It's probably best to assume you won't have
+          internet access and plan accordingly.
+        </li>
         <h4 class="list-group-item list-head">How will I hack without the internet?!</h4>
-        <li class="list-group-item">We will provide a server with libraries and docs. If you need to Stack Overflow something, ask the person next to you!</li>
-        <h4 class="list-group-item list-head">I'm under 18, can I come? (or: I have kids who are under 18, can they come?)</h4>
-        <li class="list-group-item">Unfortunately we can't accomodate minors, please look into meetups and workshops in your area.</li>
-        <h4 class="list-group-item list-head">I have complicated dietary requirements, will you be able to feed me?</h4>
-        <li class="list-group-item">We are committed to providing food and drinks to accomodate all attendees needs,
-          just let us know your requirements during ticket purchase and we will make sure your are catered for.
-          If you have severe allergies please include this information and bring along your EpiPen.</li>
+        <li class="list-group-item">We will provide a server with libraries and docs. If you need to Stack
+          Overflow something, ask the person next to you!
+        </li>
+        <h4 class="list-group-item list-head">I'm under 18, can I come? (or: I have kids who are under 18,
+          can they come?)</h4>
+        <li class="list-group-item">Unfortunately we can't accomodate minors, please look into meetups and
+          workshops in your area.
+        </li>
+        <h4 class="list-group-item list-head">I have complicated dietary requirements, will you be able to
+          feed me?</h4>
+        <li class="list-group-item">We are committed to providing food and drinks to accomodate all
+          attendees needs,
+          just let us know your requirements during ticket purchase and we will make sure your are catered
+          for.
+          If you have severe allergies please include this information and bring along your EpiPen.
+        </li>
         <h3>For attendees</h3>
         <h4 class="list-group-item list-head">What time should my flights be?</h4>
-        <li class="list-group-item">Buses to the campsite will leave the airport and CBD at 4pm so we suggest you land no later than 3pm Friday.
-          We will have you back at the airport by 12pm Monday, or 4pm if you're coming to lunch, so we suggest you book departing flights for 1pm or 5pm onwards.</li>
+        <li class="list-group-item"></li>
         <h4 class="list-group-item list-head">Where do I go if I'm catching the bus from the city?</h4>
-        <li class="list-group-item">There will be a group gathering at <a href:http://www.dukeofyork.com.au>The Duke of York</a>
-          and another at <a href=http://blue-birdcoffeelounge.com>Blue-Bird Coffee Lounge</a> throughout the afternoon.
-          The bus will pick you up from outside the Duke of York at 4:20pm</li>
-        <h4 class="list-group-item list-head">I plan to drive to the campsite, what time should I arrive?</h4>
-        <li class="list-group-item">Please arrive no earlier than 4pm on Friday, you can arrive as late as you like but keep in touch as best you can if you are arriving very late.</li>
-        <h4 class="list-group-item list-head">Will there be a place to buy things I forgot/couldn't travel with?</h4>
-        <li class="list-group-item">Both buses will be stopping breifly at the <a href:http://www.brickworksmarketplace.com.au>Brickworks Marketplace</a> with a supermarket, department store and Dan Murphy's.
-          The buses depart from the Brickworks at 5:15.
-          Please be sure to get back on the same bus you arrived on.</li>
-        <h4 class="list-group-item list-head">I am signed up for the Monday lunch or activity course and I no longer wish to attend, do I need to cancel my upgrade?</h4>
-        <li class="list-group-item">Yes, please email us with your name and ticket code so we can free up a spot for someone else.</li>
+        <li class="list-group-item"></li>
+        <h4 class="list-group-item list-head">I plan to drive to the campsite, what time should I
+          arrive?</h4>
+        <li class="list-group-item">Please arrive no earlier than 4pm on Friday, you can arrive as late as
+          you like but keep in touch as best you can if you are arriving very late.
+        </li>
+        <h4 class="list-group-item list-head">Will there be a place to buy things I forgot/couldn't travel
+          with?</h4>
+        <li class="list-group-item"></li>
+      </div>
     </div>
   </div>
-</div>
 
-<div id="bring" class="well">
-  <h2>
-    What to Bring
-  </h2>
-  <div class="row">
-    <div class="col-sm-6">
-      <ul class="list-group">
-        <h4 class="list-group-item list-head">Essential</h4>
-        <li class="list-group-item">Sleeping bag or blanket and sheet</li>
-        <li class="list-group-item">Towel</li>
-        <li class="list-group-item">Pillow</li>
-        <li class="list-group-item">Clothes and shoes for cold weather/possible rain</li>
-        <li class="list-group-item">Toiletries and medications</li>
-        <li class="list-group-item">Laptop/phone and chargers</li>
-        <li class="list-group-item">Any files you would usually get from the internet</li>
-      </ul>
-    </div><!-- /.col-sm-6 -->
+  <div id="bring" class="well">
+    <h2>
+      What to Bring
+    </h2>
+    <div class="row">
+      <div class="col-sm-6">
+        <ul class="list-group">
+          <h4 class="list-group-item list-head">Essential</h4>
+          <li class="list-group-item">Sleeping bag or blanket and sheet</li>
+          <li class="list-group-item">Towel</li>
+          <li class="list-group-item">Pillow</li>
+          <li class="list-group-item">Clothes and shoes for cold weather/possible rain</li>
+          <li class="list-group-item">Toiletries and medications</li>
+          <li class="list-group-item">Laptop/phone and chargers</li>
+          <li class="list-group-item">Any files you would usually get from the internet</li>
+        </ul>
+      </div><!-- /.col-sm-6 -->
 
-    <div class="col-sm-6">
-      <ul class="list-group">
-        <h4 class="list-group-item list-head">Optional</h4>
-        <li class="list-group-item">Snacks/treats</li>
-        <li class="list-group-item">Alcohol of choice</li>
-        <li class="list-group-item">Bathers if you’d like to swim in the indoor pool</li>
-        <li class="list-group-item">Board games/deck of cards</li>
-        <li class="list-group-item">Thermos/water bottle</li>
-        <li class="list-group-item">Closed shoes and clothes you are ok with getting <b>very</b> muddy if you are signed on for the Activity Course</li>
-      </ul>
-    </div><!-- /.col-sm-6 -->
-
+      <div class="col-sm-6">
+        <ul class="list-group">
+          <h4 class="list-group-item list-head">Optional</h4>
+          <li class="list-group-item">Snacks/treats</li>
+          <li class="list-group-item">Alcohol of choice</li>
+          <li class="list-group-item">Board games/deck of cards</li>
+          <li class="list-group-item">Thermos/water bottle</li>
+        </ul>
+      </div>
+    </div>
   </div>
-</div>
-
-<!-- <div class="row">
-  <table class="table">
-    <tbody>
-      <tr>
-        <td><img src="../images/lauren-hennessy.jpg" alt="Lauren" class="img-circle" width="140"></br><p>Lauren</p></td>
-        <td>Design is Hard</td>
-        <td>@l_k_hennssy</td>
-      </tr>
-      <tr>
-        <td><img src="../images/lauren-hennessy.jpg" alt="Lauren" class="img-circle" width="140"></br><p>Someone Else</p></td>
-        <td>JavaScript, just why?</td>
-        <td>@nope</td>
-      </tr>
-      <tr>
-        <td><img src="../images/lauren-hennessy.jpg" alt="Lauren" class="img-circle" width="140"></br><p>Another Someone Else</p></td>
-        <td>Too many pictures of Lauren</td>
-        <td>@cry</td>
-      </tr>
-    </tbody>
-  </table>
-</div> -->
