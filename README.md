@@ -1,6 +1,8 @@
-# Rails Camp Adelaide Site
+# Rails Camp Queensland Site
 
-This is the work-in-progress static Rails Camp Adelaide site using Middleman and Bootstrap Sass.
+This is the work-in-progress static Rails Camp Queensland site using Middleman and Bootstrap Sass.
+
+Thanks to @lkhennessy for all her hard work so we didnt have to reinvent the wheel.
 
 To see the current built version go [here](http://lkhennessy.github.io/rails-camp/)
 
